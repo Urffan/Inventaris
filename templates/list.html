@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>inventaris</title>
+</head>
+<body>
+  <table border="1">
+      <tr>  
+        <thead>
+          <th>KODE</th>
+          <th>NAMA</th>
+          <th>JENIS</th>
+          <TH>JUMLAH</TH>
+          <th>KONDISI</th>
+        </thead>
+      </tr>
+      <tbody>
+      {% for barang in barang%}
+      <tr>
+        <td>{{barang.kode}}</td>
+        <td>{{barang.nama}}</td>\
+        <td>{{barang.jenis}}</td>
+        <td>{{barang.jumlah}}</td>
+        <td>{{barang.kondisi}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>  
+</body>
+</html>
